@@ -1,0 +1,116 @@
+Me: Give an example: simulate the dataset with same variables (Ward_Number between 1-25)
+
+GPT:
+# Load necessary library
+set.seed(123)  # Ensure reproducibility
+
+# Define Wards and Years
+wards <- 1:25
+years <- 2007:2024
+
+# Simulate dataset
+simulation_data <- data.frame(
+  Ward_Number = rep(wards, each = length(years)),              # Repeat wards for each year
+  Year = rep(years, times = length(wards))                    # Repeat years for each ward
+)
+
+# Simulate Fines (random fines between 0 and 500)
+simulation_data$Fines <- sample(0:500, nrow(simulation_data), replace = TRUE)
+
+# Simulate Enforcement Start Date
+# Randomly assign enforcement start dates (within a plausible range for each ward)
+simulation_data$Enforcement_Start_Date <- as.Date(
+  paste0(sample(2007:2010, nrow(simulation_data), replace = TRUE), "-", 
+         sample(1:12, nrow(simulation_data), replace = TRUE), "-", 
+         sample(1:28, nrow(simulation_data), replace = TRUE)),
+  format = "%Y-%m-%d"
+)
+
+# Simulate Locations (e.g., intersections)
+locations <- c("Richmond St. and Parliament St.",
+               "Lake Shore Blvd. and York St.",
+               "Steeles Ave. and Hilda Ave.",
+               "Bathurst St. and Sheppard Ave.",
+               "Dixon Rd. and Kipling Ave.")
+simulation_data$Location <- sample(locations, nrow(simulation_data), replace = TRUE)
+
+# Simulate additional variables (e.g., Weather impact, Traffic volume)
+simulation_data$Weather_Impact <- sample(c("Low", "Moderate", "High"), nrow(simulation_data), replace = TRUE)
+simulation_data$Traffic_Volume <- sample(500:5000, nrow(simulation_data), replace = TRUE)  # Cars/day
+
+# Reshape into wide format for years (optional, if needed)
+simulation_data_wide <- reshape(
+  simulation_data,
+  timevar = "Year",
+  idvar = "Ward_Number",
+  direction = "wide"
+)
+
+# Save the simulated data
+write.csv(simulation_data, "simulated_data_detailed.csv", row.names = FALSE)
+
+# Display first few rows of the dataset
+head(simulation_data)
+
+
+Me: Give an example: write the test code for the uploaded dataset, example are shown [uploaded image file]
+
+GPT:
+# Load required libraries
+library(testthat)
+library(arrow)  # For reading Parquet files
+
+# Load the dataset
+data <- read_parquet("analysis_data.parquet")
+
+# Test suite for the dataset
+test_that("Dataset Quality Tests", {
+
+  # Test 1: Dataset is loaded successfully
+  expect_true(exists("data"), info = "Dataset could not be loaded.")
+  
+  # Test 2: Check the number of rows and columns
+  expect_true(nrow(data) > 0, info = "Dataset should have more than 0 rows.")
+  expect_true(ncol(data) > 0, info = "Dataset should have more than 0 columns.")
+  
+  # Test 3: Validate column names
+  expected_columns <- c("Location_Code", "Ward_Number", "Location", 
+                        "Enforcement_Start_Date", paste0("Year_", 2007:2024))
+  expect_true(all(expected_columns %in% colnames(data)), 
+              info = "The dataset does not contain all expected columns.")
+  
+  # Test 4: Check if `Location_Code` is numeric and unique
+  expect_true(is.numeric(data$Location_Code), 
+              info = "Location_Code column should be numeric.")
+  expect_equal(length(unique(data$Location_Code)), nrow(data), 
+               info = "Location_Code values should be unique.")
+  
+  # Test 5: Validate `Ward_Number` is integer and within range
+  expect_true(all(data$Ward_Number >= 1 & data$Ward_Number <= 25), 
+              info = "Ward_Number values should be between 1 and 25.")
+  
+  # Test 6: Check `Enforcement_Start_Date` is a valid date
+  enforcement_dates <- as.Date(data$Enforcement_Start_Date, format = "%Y-%m-%d")
+  expect_true(all(!is.na(enforcement_dates)), 
+              info = "Enforcement_Start_Date column contains invalid dates.")
+  
+  # Test 7: Validate all yearly fines columns
+  year_columns <- grep("Year_", colnames(data), value = TRUE)
+  fines_numeric_check <- sapply(data[year_columns], function(col) all(is.numeric(col) & col >= 0))
+  expect_true(all(fines_numeric_check), 
+              info = "All yearly fines columns should contain non-negative numeric values.")
+  
+  # Test 8: `Location` column should not contain NA values
+  expect_true(all(!is.na(data$Location)), 
+              info = "Location column contains NA values.")
+  
+  # Test 9: Dataset should not contain duplicate rows
+  expect_equal(nrow(data), nrow(unique(data)), 
+               info = "The dataset contains duplicate rows.")
+  
+  # Test 10: Validate `Year_2007` column is present and non-negative
+  expect_true("Year_2007" %in% colnames(data), 
+              info = "Year_2007 column is missing.")
+  expect_true(all(data$Year_2007 >= 0), 
+              info = "Year_2007 column contains negative values.")
+})
