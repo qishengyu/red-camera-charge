@@ -1,0 +1,58 @@
+---
+title: "My title"
+subtitle: "My subtitle if needed"
+author: "Qisheng Yu"
+thanks: "Code and data are available at: [https://github.com/qishengyu/red-camera-charge](https://github.com/qishengyu/red-camera-charge)."
+date: today
+date-format: long
+abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
+format: pdf
+number-sections: true
+bibliography: references.bib
+---
+
+# Introduction
+
+
+# Data {#sec-data}
+
+## Overview
+
+
+## Measurement
+
+
+## Outcome variables
+
+```{r}
+library(arrow)
+library(ggplot2)
+library(dplyr)
+
+# Load data
+data <- read_parquet("../data/02-analysis_data/analysis_data.parquet")
+data_long <- read_parquet("../data/02-analysis_data/analysis_data_long.parquet")
+
+data <- data %>%
+  mutate_at(vars(contains("Year")), as.numeric)
+data <- data %>%
+  mutate(Enforcement_Start_Date = as.Date(Enforcement_Start_Date))
+data <- data %>%
+  mutate(Location_Code = as.numeric(Location_Code))
+
+data_long <- data_long %>%
+  mutate_at(vars(contains("Year")), as.numeric)
+data_long <- data_long %>%
+  mutate(Enforcement_Start_Date = as.Date(Enforcement_Start_Date))
+data_long <- data_long %>%
+  mutate(Fines = as.numeric(Fines))
+data_long <- data_long %>%
+  mutate(Location_Code = as.numeric(Location_Code))
+```
+
+
+## Predictor variables
+
+
+
+
