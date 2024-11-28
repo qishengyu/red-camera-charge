@@ -1,0 +1,323 @@
+"...1","...2","...3","...4","...5","...6","...7","...8","...9","...10","...11","...12","...13","...14","...15","...16","...17","Published: September 2024","...19","...20","...21","...22","...23"
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Location Codes","Ward Number","Charges Laid by Location & Year","Enforcement Start Date","Enforcement End Date",2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,"2021",2022,2023,2024
+"2501","13","Richmond St. and Parliament St.","39395",NA,46,1208,909,998,827,1100,812,721,809,829,3994,6615,2937,2106,"1400",1290,1281,899
+"2502","10","Lake Shore Blvd. and York St.","39395",NA,42,635,165,238,394,592,249,310,410,271,45,324,321,1197,"840",757,659,310
+"2503","6","Steeles Ave. and Carpenter Rd.","39395",NA,70,1061,1123,835,782,999,834,747,436,601,528,804,623,920,"1830",1794,1514,874
+"2504","18","Steeles Ave. and Hilda Ave.","39395",NA,25,625,527,760,846,1000,906,632,710,786,501,639,455,627,"1314",1558,1427,731
+"2505","1","Albion Rd. and Silverstone Dr.","39395",NA,222,1467,1137,1092,975,1213,1289,1071,779,797,604,0,1181,947,"912",1196,1199,594
+"2506","1","Albion Rd. and Finch Ave.*","39889","43236",0,0,93,171,145,251,160,110,70,143,32,0,0,0,"0",0,0,0
+"2507","1","Dixon Rd. and Kipling Ave.","39525",NA,0,160,86,75,96,136,106,86,56,123,27,71,99,82,"30",48,60,45
+"2508","7","Steeles Ave. and Islington Ave.","39749",NA,0,34,193,181,420,463,405,386,269,452,190,377,410,1313,"430",262,230,99
+"2509","6","Sheppard Ave. and Wilson Heights Blvd.","39889",NA,0,0,140,189,169,165,159,98,160,155,34,137,147,94,"90",108,92,75
+"2510","6","Bathurst St. and Sheppard Ave.","39395",NA,5,223,165,117,188,198,144,113,132,131,23,173,150,65,"179",201,13,0
+"2511","8","Lawrence Ave. and Marlee Ave.","39526",NA,0,436,494,454,288,228,353,275,217,193,213,283,371,307,"458",515,479,280
+"2512","8","Lawrence Ave. and Bathurst St.","39671",NA,0,54,161,74,90,207,151,174,188,168,24,71,113,342,"176",0,204,195
+"2513","18","Bayview Ave. and Cummer Ave.","39889",NA,0,0,590,943,811,1227,1194,973,879,1054,1004,885,1105,2601,"2346",2899,2513,1012
+"2514","18","Finch Ave. and Willowdale Ave.","39889","44594",0,0,184,217,0,233,182,169,176,180,22,118,57,0,"0*",0,0,0
+"2515","15","Leslie St. and Lawrence Ave.","39597",NA,0,139,132,225,165,227,176,121,95,126,18,80,84,57,"166",207,218,125
+"2516","15","Leslie St. and York Mills Rd.","40030",NA,0,9,50,141,145,207,128,147,133,139,21,101,105,114,"216",336,323,167
+"2517","15","Bayview Ave. and Truman Rd. / Fifeshire Rd.","39538",NA,0,1416,1962,2291,1966,2210,1589,1093,1163,1994,1934,1648,1591,3383,"3679",3106,1745,525
+"2518","22","Midland Ave. and McNicoll Ave.","39730",NA,0,121,395,383,356,307,238,253,341,344,152,187,81,359,"431",324,298,175
+"2519","22","Steeles Ave. and Birchmount Rd.","39889",NA,0,0,276,209,411,482,345,295,289,318,183,452,213,136,"1475",1558,1491,620
+"2520","22","Warden Ave. and Arkona Dr. / Cloverleaf Gt.","39671",NA,0,369,1218,1235,1113,1351,914,844,901,1322,1223,1099,1058,1074,"773",1153,1798,391
+"2521","23","Steeles Ave. and Brimley Rd.","39597",NA,0,365,462,402,283,552,477,370,334,379,201,269,224,224,"193",229,248,139
+"2522","11","College St. and Bathurst St.","39671",NA,0,22,109,117,43,127,71,15,108,142,34,501,583,472,"548",559,138,109
+"2523","24","Lawrence Ave. and Morningside Ave.","39671",NA,0,11,44,86,88,119,127,126,141,143,26,155,187,183,"120",68,213,132
+"2524","1","Dixon Rd. and Carlingview Dr.","39891",NA,0,0,79,482,332,551,435,260,339,358,425,158,180,238,"187",251,258,98
+"2525","8","Dufferin St. and Glencairn Ave.","39891",NA,0,0,457,933,527,998,785,948,606,619,544,610,616,2498,"2149",1567,1710,849
+"2526","15","Overlea Blvd. and Thorncliffe Park Dr. / Beth Nealson Dr.","39750",NA,0,59,234,253,228,232,211,184,243,235,122,153,178,151,"326",376,284,126
+"2527","21","Ellesmere Rd. and Kennedy Rd.","39535",NA,0,225,217,256,189,235,266,232,276,326,120,251,191,729,"474",477,524,363
+"2528","17","Finch Ave. and Leslie St.","39742",NA,0,38,123,260,203,229,241,194,137,195,92,135,179,414,"314",270,365,217
+"2529","22","Birchmount Rd. and Huntingwood Dr.","39889",NA,0,0,610,795,618,491,692,556,555,507,354,459,439,378,"509",36,51,40
+"2530","25","Kingston Rd. and Port Union Rd. / Sheppard Ave.","39890",NA,0,60,27,48,67,82,86,95,95,78,20,95,113,92,"89",68,86,43
+"2531","2","Bloor St. and The West Mall","39891",NA,0,0,117,240,232,333,253,202,183,184,38,205,190,539,"783",1070,1169,475
+"2532","3","The Queensway and The West Mall","39772",NA,0,27,216,79,224,369,494,811,346,368,400,240,266,234,"221",269,230,216
+"2533","3","Lake Shore Blvd. and Thirty Seventh St.","39891",NA,0,0,625,869,480,885,668,268,1015,709,655,948,1000,975,"767",774,681,493
+"2534","3","Kipling Ave. and Horner Ave.","39891",NA,0,29,20,11,5,34,35,32,20,16,1,22,63,125,"54",66,0,7
+"2535","3","The Queensway and North Queen St.","39905",NA,0,1,71,119,126,201,186,116,111,197,68,185,154,164,"159",106,68,134
+"2536","6","Wilson Ave. and Transit Rd. / Billy Bishop Way","40046",NA,0,11,108,542,274,479,476,293,475,650,489,544,329,256,"177",191,214,6
+"2537","4","Lake Shore Blvd. and Windermere Ave.","39597",NA,0,579,389,1040,955,1220,1366,770,896,1288,1344,1587,1367,875,"733",474,507,512
+"2538","22","Warden Ave. and McNicoll Ave.","39889",NA,0,0,643,1482,1283,1296,1176,915,810,329,209,402,389,348,"946",1173,545,216
+"2539","6","Keele St. and Wilson Ave.","39597",NA,0,49,66,80,57,89,93,77,58,79,18,72,106,68,"51",114,118,66
+"2540","9","Dupont St. and Lansdowne Ave.","39533",NA,0,380,177,116,216,380,331,237,346,742,1518,852,773,1155,"948",958,1010,546
+"2541","4","Queen St. and Lansdowne Ave. / Jameson Ave.","39834",NA,0,0,162,344,350,802,564,812,1056,1145,943,746,1498,794,"605",935,1130,710
+"2542","2","Burnhamthorpe Rd. and The East Mall","39533",NA,0,241,328,168,161,0,504,422,504,530,314,561,408,421,"382",417,189,235
+"2543","6","Sheppard Ave. and Keele St.","39889",NA,0,0,50,63,82,111,126,85,97,99,18,62,90,39,"82",0,97,73
+"2544","16","Eglinton Ave. and Bermondsey Rd. / Sloane Ave.*","39534","42922",0,835,677,889,522,535,647,705,604,609,317,0,0,0,"0",0,0,0
+"2545","5","Jane St. and Bala Ave. / Emmett Ave.","39584",NA,0,1056,1060,1037,936,869,628,1049,990,882,344,537,350,608,"586",348,454,284
+"2546","7","Jane St. and Clair Rd. / Spenvalley Dr.","39730",NA,0,472,1883,1353,1308,927,1082,77,345,1300,958,1069,1412,1524,"1065",1004,710,333
+"2547","19","O Connor Dr. and Bermondsey Rd. / Yardley Ave.","39671",NA,0,150,320,348,190,387,251,285,345,358,142,276,206,643,"449",282,124,0
+"2548","20","Danforth Ave. and Birchmount Rd.","39904",NA,0,309,220,328,269,286,287,125,200,332,145,258,203,237,"139",152,310,216
+"2549","2","Islington Ave. and The Westway","39792",NA,0,8,308,910,385,596,833,673,689,706,480,446,308,496,"1242",818,265,141
+"2550","12","Bathurst St. and Davenport Rd.","39890",NA,0,0,22,0,47,0,0,286,589,2662,2430,1587,2120,1015,"800",1625,1528,772
+"2551","20","Warden Ave. and Comstock Rd.","39749",NA,0,104,542,494,248,274,367,338,351,539,218,334,291,280,"281",419,550,280
+"2552","16","Eglinton Ave. and Victoria Park Ave.*","39891","42975",0,4,221,474,327,447,431,402,322,375,283,0,0,0,"0",0,0,0
+"2553","14","Eastern Ave. and Coxwell Ave.","40038",NA,0,0,47,181,129,164,178,189,138,151,86,219,324,259,"169",374,183,75
+"2554","13","Jarvis St. and Dundas St.*","39889","42677",0,0,346,494,365,427,303,254,290,465,0,0,0,0,"0",0,0,0
+"2555","21","Midland Ave. and Progress Ave.","39919",NA,0,0,43,129,98,119,213,199,212,211,81,154,53,45,"197",215,194,168
+"2556","21","Lawrence Ave. and Bellamy Rd.","39904",NA,0,1,123,291,228,302,196,48,494,502,283,503,540,418,"722",720,596,229
+"2557","21","Eglinton Ave. and Birchmount Rd.*","39904","42920",0,2,56,197,181,234,271,219,225,249,121,0,0,0,"0",0,0,0
+"2558","20","Danforth Rd. and Birchmount Rd.","40234",NA,0,0,7,71,58,70,55,74,75,60,4,44,40,0,"79",186,139,83
+"2559","20","St. Clair Ave. and Brimley Rd.","40046",NA,0,0,113,293,183,288,287,249,331,306,159,350,369,198,"134",0,313,190
+"2560","5","Keele St. and Lawrence Ave.","39891",NA,0,0,180,188,138,167,135,152,141,128,18,92,134,77,"480",542,304,140
+"2561","9","Bloor St. and Ossington Ave.","40869",NA,0,0,0,0,21,141,107,46,275,257,88,789,744,486,"598",770,671,360
+"2562","14","Danforth Ave. and Greenwood Ave.","40185",NA,0,0,0,557,205,299,468,631,544,613,3586,3551,2622,0,"0",0,0,0
+"2563","19","Queen St. and Woodbine Ave.","40031",NA,0,0,25,28,8,16,13,35,23,175,40,80,100,116,"77",62,51,40
+"2564","13","Jarvis St. and King St.","40031",NA,0,0,83,187,104,94,138,97,122,200,588,1318,1254,636,"839",822,666,376
+"2565","14","Lake Shore Blvd. and Leslie St.","40031",NA,0,1,252,722,512,612,334,3,16,386,191,346,304,195,"190",199,209,120
+"2566","10","Lower Jarvis St. and The Esplanade","40031",NA,0,0,414,891,108,0,284,727,665,692,2708,2500,1661,1131,"447",1243,1000,556
+"2567","14","Lake Shore Blvd. and Carlaw Ave.","40031",NA,0,0,214,1173,546,1097,768,623,583,732,566,650,601,305,"343",345,272,0
+"2568","5","Keele St. and Rogers Rd.","40064",NA,0,0,102,262,153,203,151,213,212,242,87,546,1309,1046,"300",175,576,299
+"2569","4","Bloor St. and Dundas St.","40036",NA,0,0,129,348,146,297,328,267,226,198,824,992,851,589,"897",1040,1083,642
+"2570","8","Yonge St. and Lawrence Ave.","40030",NA,0,0,188,131,740,963,864,772,402,255,155,272,211,271,"1360",1339,1136,529
+"2571","13","Spadina Ave. and Adelaide St.*","40130","43815",0,0,0,38,63,5,110,134,175,206,71,15,22,0,"0",0,0,0
+"2572","8","Eglinton Ave. and Spadina Rd.","40185",NA,0,0,0,752,813,954,774,683,683,713,975,601,420,722,"631",432,515,249
+"2573","12","Eglinton Ave. and Mount Pleasant Rd.*","39973","42907",0,0,93,221,156,109,121,143,149,24,0,0,0,0,"0",0,0,0
+"2574","16","Lawrence Ave. and Don Mills Rd.","40066",NA,0,0,30,86,68,63,90,85,86,112,11,40,80,81,"68",66,102,114
+"2575","23","Neilson Rd. and Sheppard Ave.","40029",NA,0,0,108,248,150,162,149,136,174,203,51,134,144,102,"74",80,61,41
+"2576","23","Sheppard Ave. and Malvern St. / Progress Ave.","40029",NA,0,0,73,622,695,584,507,287,1038,829,655,801,780,875,"923",1218,1139,411
+"2577","25","Ellesmere Rd. and Military Trl.","40030",NA,0,0,81,684,531,667,539,691,589,564,392,374,361,347,"406",634,457,249
+"2578","21","Kennedy Rd. and HWY 401 C E Kennedy Off Ramp / William Kitchen Rd.","43088",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,104,5641,5454,4890,"2662",2273,2196,1157
+"2579","10","University Ave. and Richmond St.","42940",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1334,2941,3106,1325,"0",1041,1815,688
+"2580","13","Adelaide St. and Parliament St.","42891",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,718,808,1189,435,"263",743,931,1222
+"2581","10","University Ave. and Adelaide St.","43028",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,244,1009,908,685,"719",1667,1133,283
+"2582","1","Dixon Rd. and Martin Grove Rd.","42926","44732",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,150,314,240,217,"111",77,0,0
+"2583","10","University Ave. and Queen St.","42978",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,740,2287,2292,1407,"871",0,0,0
+"2584","6","Keele St. and Wilson Ave.","43028",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,172,490,485,493,"450",726,719,496
+"2585","10","Lake Shore Blvd. and Spadina Ave. / Lower Spadina Ave.","42955",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,439,437,289,1267,"1142",1171,790,381
+"2586","3","Lake Shore Blvd. and Park Lawn Rd. / Marine Parade Dr.","43014",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,71,230,288,309,"310",363,349,187
+"2587","18","Sheppard Ave. and Bayview Ave.","42930",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,57,127,105,84,"73",259,165,94
+"2588","7","Steeles Ave. and Weston Rd.","43038",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,58,251,185,229,"286",240,294,146
+"2589","24","Lawrence Ave. and Greencedar Crct. / Greenbrae Crct.","42804",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,506,901,709,711,"1212",950,771,459
+"2590","22","Finch Ave. and Birchmount Rd.","42804",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,108,98,111,144,"130",155,131,85
+"2591","7","Finch Ave. and Sentinel Rd.*","42818","43235",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,341,149,0,0,"0",0,0,0
+"2592","2","Bloor St. and The East Mall","43088",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,9,143,125,295,"221",268,325,160
+"2593","1","Albion Rd. and Finch Ave.*","42926","43235",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,116,56,0,0,"0",0,0,0
+"2594","7","Wilson Ave. and Jane St.","42803",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,254,216,173,561,"410",329,307,187
+"2595","22","Warden Ave. and McNicoll Ave.","42804",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,526,622,534,652,"661",749,596,357
+"2596","1","Finch Ave. and Martin Grove Rd.*","42891","43235",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,123,55,0,0,"0",0,0,0
+"2597","7","Steeles Ave. and Keele St.","42804",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,255,257,102,0,"0",0,0,0
+"2598","10","University Ave. and Wellington St.","42984",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,994,2856,1972,1620,"1630",832,0,87
+"2599","1","Albion Rd. and Kipling Ave.","42926",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,197,571,250,310,"431",707,415,217
+"2600","3","The Queensway and Kipling Ave. ","43348",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,75,222,171,"145",161,248,139
+"2601","17","Finch Ave. and Gordon Baker Rd. / HWY 404 N Ramp","43069",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,66,504,498,405,"510",138,0,0
+"2602","13","Jarvis St. and Isabella St.","42807",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,83,27,20,1,"2",3,19,19
+"2603","20","Danforth Rd. and Brimley Rd.","42804",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1668,1714,1468,1192,"739",1168,1202,893
+"2604","13","Dundas St. and River St.","42926","44594",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,174,268,209,122,"147*",4,0,0
+"2605","23","McCowan Rd. and McNicoll Ave.","42808",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,321,355,287,348,"371",256,261,125
+"2606","5","St. Clair Ave. and Gunns Rd. / Old Stock Yards Rd.","42926",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,106,188,148,358,"492",515,392,235
+"2607","10","Spadina Ave. and King St.","43042",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,363,1786,1520,1387,"935",0,0,53
+"2608","23","Sheppard Ave. and McCowan Rd.","42804",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,453,538,519,339,"946",668,650,281
+"2609","13","King St. and Parliament St.","42804",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,83,148,93,100,"60",143,138,88
+"2610","1","Rexdale Blvd. and Martin Grove Rd.","42836",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,330,421,359,243,"185",352,268,145
+"2611","3","The Queensway and The East Mall","43014",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,174,937,809,749,"814",871,541,249
+"2612","12","St. Clair Ave. and Spadina Rd.","42930",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,209,262,147,122,"104",381,367,0
+"2613","6","Dufferin St. and Finch Ave.","42891",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,457,624,219,291,"289",283,380,245
+"2614","3","Islington Ave. and Evans Ave.","42891",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,122,95,477,731,"545",507,508,308
+"2615","1","Eglinton Ave. and Martin Grove Rd.","42926",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,561,790,837,907,"991",798,779,296
+"2616","23","Finch Ave. and Brimley Rd.","42804",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,123,102,103,75,"109",209,198,111
+"2617","4","Lake Shore Blvd. and Jameson Ave.","42926",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2139,3336,3125,1692,"973",1457,1882,1048
+"2618","21","Eglinton Ave. and Danforth Rd.","42804",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2222,1729,1380,998,"822",921,669,416
+"2619","23","Neilson Rd. and McLevin Ave.","42891",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,122,203,155,148,"141",139,99,30
+"2620","10","Simcoe St. and Wellington St.","42955",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,15,49,51,34,"26",1,35,6
+"2621","7","Jane St. and Stong Crt. / York Gate Blvd.","43028",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,326,1239,1136,1005,"1060",1705,1277,653
+"2622","24","Ellesmere Rd. and Bellamy Rd.","42804",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,290,441,352,241,"276",398,325,157
+"2623","21","Lawrence Ave. and Kennedy Rd.","42804",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,100,81,38,118,"168",156,188,118
+"2624","20","Warden Ave. and Comstock Rd.","42804",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,463,444,298,206,"404",649,733,396
+"2625","23","Sheppard Ave. and Malvern St. / Progress Ave.","42858",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,198,208,163,234,"201",235,181,72
+"2626","1","Rexdale Blvd. and Kipling Ave.","43028",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,52,70,111,220,"214",200,345,249
+"2627","5","Weston Rd. and Lawrence Ave.","43028",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,52,303,224,242,"0",0,465,444
+"2628","1","Islington Ave. and Albion Rd.","42905",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,67,127,102,81,"228",180,174,75
+"2629","3","Islington Ave. and The Queensway","43147","44594",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,94,65,107,"63*",0,0,0
+"2630","18","Yonge St. and Steeles Ave.","42958",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,128,170,6,0,"0",92,98,93
+"2631","5","St. Clair Ave. and Runnymede Rd.","42958",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,156,367,331,221,"922",965,1030,562
+"2632","21","Warden Ave. and Ashtonbee Rd.","42807",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1083,1254,866,755,"1045",1660,1033,479
+"2633","7","Finch Ave. and Signet Dr.*","43028","43235",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,523,723,0,0,"0",0,0,0
+"2634","5","Keele St. and Lawrence Ave.","42958",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,165,374,327,287,"659",737,498,221
+"2635","22","Birchmount Rd. and McNicoll Ave.","42958",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,89,269,373,274,"624",537,636,294
+"2636","23","Finch Ave. and Middlefield Rd.","42818",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,193,231,169,141,"123",130,354,168
+"2637","1","Dixon Rd. and Islington Ave.","43088",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,15,364,286,170,"334",1114,1452,734
+"2638","10","Spadina Ave. and Bremner Blvd. / Fort York Blvd.","43006",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,215,605,498,1880,"1539",1916,1666,1029
+"2639","3","The Queensway and Royal York Rd.","42891",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,49,43,31,23,"10",17,41,28
+"2640","10","Lake Shore Blvd. and Strachan Ave.","43014",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,104,756,510,204,"217",217,416,260
+"2641","24","Lawrence Ave. and Markham Rd.","42818",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,106,128,108,203,"258",208,255,71
+"2642","5","Jane St. and Falstaff Ave.","43028",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,111,692,684,497,"861",1157,622,480
+"2643","8","Avenue Rd. and Lawrence Ave.","42808",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,151,130,121,72,"672",803,682,350
+"2644","1","Highway 27 and Finch Ave.*","42817","43235",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,346,153,0,0,"0",0,0,0
+"2645","22","Pharmacy Ave. and McNicoll Ave.","42818",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,221,182,256,175,"151",183,113,80
+"2646","24","Markham Rd. and Progress Ave.","42958",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,23,58,47,14,"58",75,68,38
+"2647","23","Markham Rd. and Sheppard Ave.","42836",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,571,720,636,354,"660",556,460,385
+"2648","17","Don Mills Rd. and Van Horne Ave.","42926",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,540,150,585,366,"246",576,532,189
+"2649","25","Sheppard Ave. and Morningside Ave.","42804",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,261,216,68,0,"0",0,45,46
+"2650","25","Morningside Ave. and Milner Ave.","42804",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,625,494,150,242,"193",172,129,69
+"2651","7","Finch Ave. and Norfinch Dr. / Oakdale Rd.*","42905","43235",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,35,15,0,0,"0",0,0,0
+"2652","22","Kennedy Rd. and McNicoll Ave.","43006",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,152,637,602,1110,"1032",947,833,474
+"2653","24","Ellesmere Rd. and Markham Rd.","43147",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,119,118,116,"263",303,421,162
+"2654","4","Bloor St. and Keele St. / Parkside Dr.","43348",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,244,832,493,"100",90,218,133
+"2655","2","Eglinton Ave. and Scarlett Rd.","43619",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,21,43,"83",30,0,0
+"2656","6","Steeles Ave. and Dufferin St.","43348",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,120,286,294,"226",301,282,141
+"2657","9","Dufferin St. and Dupont St.","43432",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,13,105,43,"251",318,86,0
+"2658","3","Bloor St. and Islington Ave.","43432",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,11,47,"36",56,51,18
+"2659","1","Steeles Ave. and Highway 27","43525",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,30,137,"146",207,98,111
+"2660","17","Don Mills Rd. and Sheppard Ave.","43727",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,98,276,"149",172,110,65
+"2661","7","Steeles Ave. and Signet Dr.","43619",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,318,401,"727",958,867,990
+"2662","22","Kennedy Rd. and Sheppard Ave","43978",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,870,"752",826,546,366
+"2663","12","Bathurst St. and Nina St.","44168",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,41,"524",278,172,0
+"2664","17","Finch Ave. and Liszt Gt.","45352",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1031
+"2665","22","Warden Ave. and Bamburgh Crcl.","45352",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,380
+"2666","12","Avenue Rd. and Chaplin Cres.","44700",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"0",1513,1825,829
+"2667","23","Brimley Rd. and Huntingwood Dr.","44293",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"431",829,580,298
+"2668","21","Brimley Rd. and Progress Ave.","44343",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"196",307,312,180
+"2669","20","Kingston Rd. and Brimley Rd.","44323",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"230",313,198,92
+"2670","24","Lawrence Ave. and Scarborough Golf Club Rd.","44330",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"280",409,265,142
+"2671","23","Steeles Ave. and Markham Rd.","44377",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"281",292,227,114
+"2672","6","Steeles Ave. and Bathurst St.","44559",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"0",188,234,136
+"2673","10","Strachan Ave. and Wellington St.","44398",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"47",101,122,99
+"2674","11","University Ave. and College St.","44490",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"80",230,219,280
+"2675","11","University Ave. and Dundas St.","44398",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"832",1658,1419,1123
+"2676","21","Warden Ave. and Ellesmere Rd.","44358",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"781",1323,865,498
+"2677","22","Warden Ave. and Bridletowne Crcl. (South Intersection)","44546",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"6",435,282,186
+"2678","18","Willowdale Ave. and Bishop Ave.","44293",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"51",98,43,42
+"2679","22","Steeles Ave. and Warden Ave.","44820",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,15,44,17
+"2680","18","Cummer Ave. and Willowdale Ave.","44341",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"555",285,838,417
+"2681","17","Sheppard Ave. and Victoria Park Ave.","44343",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"193",231,291,219
+"2682","6","Bathurst St. and Finch Ave.","44406",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"27",215,231,116
+"2683","17","Finch Ave. and Don Mills Rd.","44330",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"82",323,389,256
+"2684","21","Ellesmere Rd. and Midland Ave.","44770",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,219,557,256
+"2685","7","Steeles Ave. and Jane St.","44260",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"491",397,573,85
+"2686","7","Sheppard Ave. and Jane St.","44341",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"153",192,231,152
+"2687","21","Lawrence Ave. and Midland Ave.","44469",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",64,88,67
+"2688","21","McCowan Rd. and Ellesmere Rd.","44435",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"81",145,142,88
+"2689","8","Dufferin St. and Bridgeland Ave.","44764",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,152,286,154
+"2690","21","McCowan Rd. and Brimorton Dr.","44358",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1056",1102,905,559
+"2691","1","Highway 27 and Rexdale Blvd.","44358",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"82",41,113,64
+"2692","6","Bathrust St. and Wilson Ave.","44376",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"275",504,358,741
+"2693","13","Jarvis St. and Shuter St.","44350",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"724",1339,1627,553
+"2694","24","Lawrence Ave. and Greencrest Crct.","44406",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"730",1321,917,498
+"2695","1","Steeles Ave. and Martin Grove Rd.","44376",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"358",647,519,229
+"2696","10","Lake Shore Blvd. and Lower Simcoe St.","44452",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",23,48,45
+"2697","1","Martin Grove Rd. and Belfield Rd.","44406",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"112",115,76,53
+"2698","23","Finch Ave. and Markham Rd.","44350",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1033",1122,1329,810
+"2699","22","Finch Ave. and Warden Ave.","44377",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"224",323,187,84
+"2700","21","Lawrence Ave. and Pharmacy Ave.","44406",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"324",977,1228,393
+"2701","4","Jane St. and Dundas St.","44700",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,232,176,0
+"2702","21","Eglinton Ave. and Brimley Rd.","44802",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,89,210,99
+"2703","20","Eglinton Ave. and Markham Rd.","44370",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"183",374,309,137
+"2704","21","McCowan Rd. and Consilium Pl.","44883",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,105,865,183
+"2705","20","St. Clair Ave. and Danforth Rd.","44313",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"145",102,85,33
+"2706","21","Lawrence Ave. and McCowan Rd.","44424",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"284",509,498,205
+"2707","25","Morningside Ave. and Hwy. 401 N Ramp","44370",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"487",643,379,254
+"2708","24","Bellamy Rd. and Brimorton Dr.","44350",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"232",328,367,160
+"2709","7","Weston rd. and Fenmar Dr.","44406",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"167",344,380,255
+"2710","23","Markham Rd. and McNicoll Ave.","44358",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"537",670,657,324
+"2711","21","Lawrence Ave. and Warden Ave.","44370",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"272",352,538,251
+"2712","2","Kippling Ave. and Widdicombe Hill","44424",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"255",647,682,319
+"2713","22","Sheppard Ave. and Warden Ave.","44559",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"2",203,204,129
+"2714","21","Lawrence Ave. and Brimley Rd.","44435",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"195",563,495,224
+"2715","6","William R. Allen Rd. and Sheppard Ave. W","44376",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"275",485,445,145
+"2716","22","Midland Ave. and Copthorne Ave.","44424",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"76",160,104,143
+"2717","16","Lawrence Ave. and The Donway E","44755",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,150,587,301
+"2718","22","Sheppard Ave. and Midland Ave.","44831",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,19,106,42
+"2719","17","Steeles Ave. and Don Mills Rd.","44452",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"50",239,313,503
+"2720","20","St. Clair Ave. and Kennedy Rd.","44916",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,9,309,203
+"2721","20","Danforth Rd. and Midland Ave.","44923",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,4,999,739
+"2722","23","Finch Ave. and McCowan Rd.","44509",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",59,43,16
+"2723","22","Steeles Ave. and Kennedy Rd.","44888",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,15,153,28
+"2724","6","Steeles Ave. and Alness St.","44406",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"108",226,435,329
+"2725","23","Markham Rd. and McLevin Ave.","44559",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",1206,1090,611
+"2726","2","Burnhamthorpe Rd. and Martin Grove Rd.","44802",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,809,1856,998
+"2727","2","Burnhamthorpe Rd. and The West Mall","44435",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"72",152,169,141
+"2728","23","Markham Rd. and Milner Ave.","44466",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"34",163,172,83
+"2729","1","Ellesmere Rd. and Military Trl. / Orton Park Rd.","44894",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,72,860,299
+"2730","5","Jane St. and St. Clair Ave. W.","44424",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"34",164,70,0
+"2731","23","Finch Ave. E. and Neilson Rd.","44469",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"122",243,293,142
+"2732","21","Lawrence Ave. and Howden Rd.","44546",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"77",2648,2260,897
+"2733","23","Finch Ave. and Tapscott Rd.","44944",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,36,256,158
+"2734","22","Kennedy Rd. and Finch Ave. E.","44509",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"29",158,162,62
+"2735","18","Finch Ave. E. and Kenneth Ave.","44490",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"6",133,130,53
+"2736","20","Warden Ave. and St. Clair Ave","44916",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,37,276,121
+"2737","18","Willowdale Ave. and Spring Garden Ave.","44435",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",205,217,136
+"2738","16","O'Connor Dr. and Sunrise Ave.","44509",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",137,112,54
+"2739","1","Martin Grove Rd. and Bethridge Rd.","44469",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"174",475,440,302
+"2740","24","Kingston Rd. and Lawrence Ave.","44879",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,303,557,5
+"2741","21","Ellesmere Rd. and Brimley Rd.","44770",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,200,361,150
+"2742","23","Brimley Rd. and Sheppard Ave. E","44466",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"78",379,282,102
+"2743","24","Markham Rd. and Greencedar Crct.","44435",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",161,189,93
+"2744","1","Rexdale Blvd. and Queens Plate Dr.","44867",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,583,2763,1247
+"2745","13","Yonge St. and Richmond St.","44820",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,72,321,69
+"2746","3","Evans Ave. and Horner Ave.","44469",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"45",204,182,115
+"2747","17","Victoria Park Ave. and Steeles Ave.","44944",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,108,1457,692
+"2748","2","Dundas St. 275 M N of Royal York Rd.","44490",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"166",1172,1127,443
+"2749","23","McCowan Rd. 210 metres S of Alton Towers Crcl. (North Intersection)","44509",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"33",1020,964,571
+"2750","7","Jane St. 70 metres N of William Cragg Dr.","44546",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",307,774,515
+"2751","24","Neilson Rd. and Military Trl.","44637",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,439,461,288
+"2752","1","Martin Grove Rd and John Garland Blvd.","44602",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,188,417,153
+"2753","10","Lake Shore Blvd. and Bathurst st","44820",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,144,377,265
+"2754","18","Bayview Ave. and Finch Ave. E","44792",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,87,231,230
+"2755","14","O'Connor Dr. and Pape Ave.","44637",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,779,572,287
+"2756","25","Meadowvale Rd. and Dean Oark Rd.","44650",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,570,705,422
+"2757","24","Ellesmere Rd. and Morningside Ave.","44916",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,184,103
+"2758","23","McCowan rd. and Alton Towers Crcl. (N Side)","44770",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,257,753,347
+"2759","7","Islington Ave. and Millwick Dr.","44802",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,25,465,456
+"2760","20","Pharmacy Ave. and St. Clair Ave. E.","44802",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,122,390,423
+"2761","18","Yonge St. and Athabaska Ave.","44802",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,808,2537,1194
+"2762","21","McCowan Rd. and Bushby Rd.","44770",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,350,596,292
+"2763","18","Empress Ave. and Yonge St","44831",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,399,1585,643
+"2764","22","Warden ave. and Huntingwood Dr.","44637",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,468,284,72
+"2765","21","Lawrence Ave. and Birchmount Rd.","44770",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,153,426,193
+"2766","3","Bloor St. and Royal York Rd.","44701",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,172,356,65
+"2767","2","Eglinton Ave. and Kipling Ave.","44741",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,35,286,25
+"2768","3","The East Mall and North Queen St.","44764",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,68,128,107
+"2769","1","Albion Rd. and Martin Grove Rd.","44845",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,43,373,84
+"2770","1","Islington Ave. and Elmhurst Dr.","44755",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,87,328,212
+"2771","21","Pharmacy Ave. and Surrey ave","44820",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,81,400,303
+"2772","6","Keele St. and 401 C W Keele St. Ramp","44701",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1314,1356,650
+"2773","13","Jarvis St. and Gerrard St.","44764",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,72,152,72
+"2774","23","Sheppard Ave. and Washburn Way/Lapsley Rd.","44916",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,21,641,201
+"2775","23","Steeles Ave. and Middlefield Rd.","44741",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,61,223,115
+"2776","17","Victoria Park Ave. and Van Horne Ave.","44764",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,240,503,226
+"2777","25","Morningside Ave. and Finch Ave. / Staines Rd.","44741",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1085,1676,939
+"2778","22","Finch Ave. and Pharmacy Ave","44820",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,257,923,480
+"2779","17","Victoria Park Ave. and Finch Ave.","44960",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,462,195
+"2780","25","Sheppard Ave. and Breckon Gt./Brenyon Way","44831",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,58,246,168
+"2781","17","Sheppard ave. and Leslie St.","44802",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1053,3476,1630
+"2782","8","Dufferin St. and Lawrence Ave. W.","44831",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,21,118,62
+"2783","13","Church St. and Carlton St.","44917",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,142,80
+"2784","2","Eglinton Ave. and Centennial Park Blvd.","44917",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,30,1884,950
+"2785","17","Hwy. 404 and Steeles Ave.**",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,0
+"2786","5","Jane St. and Maple Leaf Dr.","44831",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,14,477,540
+"2787","8","Caledonia Rd. and Castlefield Ave.","44820",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,178,628,0
+"2788","25","Morningside Ave. and Casebridge Crt.","44888",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,11,145,56
+"2789","24","Scarborough Golf Club Rd. and Kingston Rd.","44848",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,106,378,237
+"2790","15","Don Mills Rd. and Overlea Blvd./Gateway Blvd.","44916",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,141,52
+"2791","24","Morningside Ave. and Kingston Rd.","44985",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,141,106
+"2792","22","Pharmacy Ave. and Huntingdale Blvd.","44900",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,13,286,139
+"2793","17","Victoria Park Ave. and Gordon Baker Rd.","44831",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,162,495,268
+"2794","24","Markham Rd. and Brimorton Dr.","44845",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,199,932,560
+"2795","1","Highway 27 and Carrier Dr.","44917",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,3,143,80
+"2796","1","Rexdale Blvd. and Islington Ave.**",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,0
+"2797","2","Kipling Ave. and The Westway","44845",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,286,143
+"2798","21","Kennedy Rd. and Progress Ave./Glamorgan Ave.","44879",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,49,1354,659
+"2799","17","Victoria Park Ave. and Old Sheppard Ave.","44888",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,37,479,462
+"2800","16","Victoria Park Ave. and Jonesville Cres./Craigton Dr.","44916",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,11,602,313
+"2801","22","Bridletown Crcl. And Finch Ave. (W Intersection)","44894",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,73,1216,603
+"2802","7","Steeles Ave. and Fenmar Dr.","44944",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,656,369
+"2803","16","Victoria Park Ave. and Ellesmere Rd.","44894",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,44,378,157
+"2804","23","Finch Ave. and Sandhurst Crcl. (W Intersection)","44894",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,77,1316,602
+"2805","1","Finch Ave. and Humber College Blvd.","44867",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,166,989,677
+"2806","22","Sheppard Ave. and Aragon Ave.","44888",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,116,1258,647
+"2807","21","Ellesmere Rd. and Pharmacy Ave.","44879",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,62,652,285
+"2808","23","Middlefield Rd. and McNicoll Ave.","44879",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,86,884,485
+"2809","25","Sheppard Ave. and Meadowvale Rd.","44985",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,231,122
+"2810","10","Harbour St. and York St.","44856",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,9,2389,322
+"2811","14","Coxwell Ave. and Mortimer Ave.","44916",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,9,302,262
+"2812","16","Victoria Park Ave. and Curlew Dr.","44888",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,68,963,590
+"2813","17","Don Mills Rd. and Leith Hill Rd.","44889",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,107,825,131
+"2814","16","Don Mills Rd. and York Mills Rd.","45042",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,112,210
+"2815","3","The Queensway and 427 C S Queensway Ramp","45387",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,132
+"2024 Data is from January 1 2024 to July 23, 2024.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"* Existing sites that have been decommissioned",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"** RLC site built, intersection is under third party construction",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
