@@ -1,0 +1,53 @@
+
+1. Dataset Overview
+-	Title: Processed Analysis Data of Red-Light Camera Fines
+-	Description: This dataset contains fines data collected from red-light cameras across multiple regions in Toronto, with variables processed and transformed for analysis. It includes yearly fine trends, enforcement start times, and ward-specific details in both long and wide formats.
+-	Source: The original raw data was sourced from Open Data Toronto (https://open.toronto.ca/dataset/red-light-camera-annual-charges/).
+
+2. Data Collection Process
+-	Data Origin: Observational data automatically collected by red-light cameras.
+-	Sampling Strategy: Near-complete census of all monitored red-light camera locations in Toronto from 2007 to 2024.
+-	Collection Timeframe: 2007-2024.
+-	Data Units: Each row in the long-format dataset represents a yearly observation of fines for a specific red-light camera location and ward.
+
+3. Variables and Metadata
+
+Wide Format Dataset (analysis_data.parquet):
+-	`Location_Code` (Numeric): Unique identifier for each red-light camera location.
+-	`Ward_Number` (Character): Ward where the red-light camera is located (1–25).
+-	`Enforcement_Start_Date` (Date): Date when enforcement began at the location.
+-	`Year_2007` to `Year_2024` (Numeric): Fines issued annually.
+
+Long Format Dataset (analysis_data_long.parquet):
+
+-	`Location_Code` (Numeric): Same as above.
+-	`Ward_Number` (Character): Same as above.
+-	`Year` (Numeric): Year of the observation.
+-	`Fines` (Numeric): Total fines issued in that year.
+-	`Enforcement_Start_Date` (Date): Same as above.
+-	`Enforcement` (Binary): Indicator of whether enforcement was active (1) or not (0).
+
+Constructed Variables:
+
+Enforcement was derived by comparing Enforcement_Start_Date with the corresponding year to determine whether enforcement was active.
+
+Missing Data Handling:
+
+Missing data in year columns were replaced with 0 fines to ensure completeness for analysis.
+
+4. Intended Use
+-	Purpose: This dataset was processed to study the effect of enforcement start time and regional variations on fine trends.
+-	Target Audience: Researchers, policymakers, and traffic safety analysts.
+-	Potential Applications:
+	-	Analyzing trends in fines over time.
+	-	Evaluating the effectiveness of red-light enforcement policies.
+	-	Regional comparisons of enforcement outcomes.
+
+5. Limitations and Ethical Considerations
+-	Known Biases: Regional selection biases may exist due to prioritization of high-risk areas for red-light cameras. Temporal effects, such as changes in traffic volume or socioeconomic factors, are not included.
+-	Limitations: Fines are the sole outcome variable; other metrics such as accident rates or compliance rates are not available. No data on broader contextual changes, such as construction projects or seasonal variations.
+-	Ethical Considerations: The dataset does not include personally identifiable information (PII), ensuring privacy compliance.
+
+6. Licensing and Citation
+-	License: This dataset is shared under the Open Data Toronto license terms.
+-	Citation: Open Data Toronto. "Red-Light Camera Fines Data." Available at: https://open.toronto.ca/dataset/red-light-camera-annual-charges/.
