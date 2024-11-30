@@ -1,13 +1,14 @@
 
 #### Preamble ####
-# Purpose: Simulates a dataset of Australian electoral divisions, including the 
-#state and party that won each division.
+# Purpose: Simulates a dataset of red-light camera fines, including fines data 
+# for different wards and years, enforcement start dates, and locations.
 # Author: Qisheng Yu
 # Date: 27 November 2024
-# Contact: rohan.alexander@utoronto.ca
+# Contact: qisheng.yu@mail.utoronto.ca
 # License: MIT
-# Pre-requisites: The `tidyverse` package must be installed
-# Any other information needed? Make sure you are in the `red-camera-charge` rproj
+# Pre-requisites: The `tidyverse` package must be installed.
+# Any other information needed? Ensure you are working within the 
+# `red-camera-charge` R project structure.
 
 
 #### Workspace setup ####

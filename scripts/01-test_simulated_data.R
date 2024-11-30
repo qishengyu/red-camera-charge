@@ -1,15 +1,17 @@
 
 #### Preamble ####
-# Purpose: Tests the structure and validity of the simulated Australian 
-#electoral divisions dataset.
-# Author: Rohan Alexander
-# Date: 26 September 2024
-# Contact: rohan.alexander@utoronto.ca
+# Purpose: Tests the structure and validity of the simulated red-light camera fines 
+# dataset in both wide and long formats.
+# Author: Qisheng Yu
+# Date: 27 November 2024
+# Contact: qisheng.yu@mail.utoronto.ca
 # License: MIT
 # Pre-requisites: 
-# - The `tidyverse` package must be installed and loaded
-# - 00-simulate_data.R must have been run
-# Any other information needed? Make sure you are in the `starter_folder` rproj
+# - The `tidyverse` and `testthat` packages must be installed and loaded.
+# - Simulated datasets (`simulated_data.csv` and `simulated_data_long.csv`) must 
+#   be available after running `00-simulate_data.R`.
+# Any other information needed? Ensure you are in the `red-camera-charge` R 
+# project structure.
 
 
 #### Workspace setup ####

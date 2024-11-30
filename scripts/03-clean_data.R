@@ -1,12 +1,19 @@
 
 #### Preamble ####
-# Purpose: Cleans the raw plane data recorded by two observers..... [...UPDATE THIS...]
-# Author: Rohan Alexander [...UPDATE THIS...]
-# Date: 6 April 2023 [...UPDATE THIS...]
-# Contact: rohan.alexander@utoronto.ca [...UPDATE THIS...]
+# Purpose: Cleans and processes the raw red-light camera fines dataset for analysis, 
+# including transforming variables, handling missing data, and converting to long format.
+# Author: Qisheng Yu
+# Date: 27 November 2024
+# Contact: qisheng.yu@mail.utoronto.ca
 # License: MIT
-# Pre-requisites: [...UPDATE THIS...]
-# Any other information needed? [...UPDATE THIS...]
+# Pre-requisites: 
+# - The `dplyr`, `tidyverse`, and `arrow` packages must be installed and loaded.
+# - The raw dataset (`raw_data.csv`) must be available in the `01-raw_data` folder.
+# Any other information needed? Ensure the `red-camera-charge` R project structure 
+# is being used, and the cleaned data will be saved in the `02-analysis_data` folder.
+
+
+
 
 #### Workspace setup ####
 

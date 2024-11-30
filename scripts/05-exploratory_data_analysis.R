@@ -1,12 +1,19 @@
 
 #### Preamble ####
-# Purpose: Models... [...UPDATE THIS...]
-# Author: Rohan Alexander [...UPDATE THIS...]
-# Date: 11 February 2023 [...UPDATE THIS...]
-# Contact: rohan.alexander@utoronto.ca [...UPDATE THIS...]
+# Purpose: Explores and analyzes the red-light camera fines dataset through 
+# summary statistics, visualizations, and exploratory data analysis (EDA), 
+# focusing on trends, regional differences, and predictors.
+# Author: Qisheng Yu
+# Date: 27 November 2024
+# Contact: qisheng.yu@mail.utoronto.ca
 # License: MIT
-# Pre-requisites: [...UPDATE THIS...]
-# Any other information needed? [...UPDATE THIS...]
+# Pre-requisites: 
+# - The `arrow`, `ggplot2`, and `tidyr` packages must be installed and loaded.
+# - Processed datasets (`analysis_data.parquet` and `analysis_data_long.parquet`) 
+#   must be available in the `02-analysis_data` folder.
+# Any other information needed? Ensure the `red-camera-charge` R project 
+# structure is used for saving outputs and running analyses.
+
 
 
 #### Workspace setup ####

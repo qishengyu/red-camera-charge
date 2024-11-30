@@ -1,12 +1,16 @@
 
 #### Preamble ####
-# Purpose: Downloads and saves the data from [...UPDATE THIS...]
-# Author: Rohan Alexander [...UPDATE THIS...]
-# Date: 11 February 2023 [...UPDATE THIS...]
-# Contact: rohan.alexander@utoronto.ca [...UPDATE THIS...]
+# Purpose: Downloads and saves the red-light camera fines dataset from 
+# Open Data Toronto.
+# Author: Qisheng Yu
+# Date: 27 November 2024
+# Contact: qisheng.yu@mail.utoronto.ca
 # License: MIT
-# Pre-requisites: [...UPDATE THIS...]
-# Any other information needed? [...UPDATE THIS...]
+# Pre-requisites: 
+# - The `opendatatoronto` and `dplyr` packages must be installed and loaded.
+# - Ensure the `red-camera-charge` R project structure is being used.
+# Any other information needed? Ensure the working directory is set correctly   
+# to save the downloaded data into the specified folder.
 
 
 #### Workspace setup ####

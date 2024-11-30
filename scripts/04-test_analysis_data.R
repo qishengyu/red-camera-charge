@@ -1,12 +1,17 @@
 
 #### Preamble ####
-# Purpose: Tests... [...UPDATE THIS...]
-# Author: Rohan Alexander [...UPDATE THIS...]
-# Date: 26 September 2024 [...UPDATE THIS...]
-# Contact: rohan.alexander@utoronto.ca [...UPDATE THIS...]
+# Purpose: Tests the structure, quality, and validity of the processed red-light 
+# camera fines dataset in both wide and long formats.
+# Author: Qisheng Yu
+# Date: 27 November 2024
+# Contact: qisheng.yu@mail.utoronto.ca
 # License: MIT
-# Pre-requisites: [...UPDATE THIS...]
-# Any other information needed? [...UPDATE THIS...]
+# Pre-requisites: 
+# - The `tidyverse`, `testthat`, and `arrow` packages must be installed and loaded.
+# - Processed datasets (`analysis_data.parquet` and `analysis_data_long.parquet`) 
+#   must be available in the `02-analysis_data` folder.
+# Any other information needed? Ensure the `red-camera-charge` R project structure 
+# is being used, and the test scripts align with the analysis workflow.
 
 
 #### Workspace setup ####

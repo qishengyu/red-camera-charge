@@ -1,12 +1,19 @@
 
 #### Preamble ####
-# Purpose: Models... [...UPDATE THIS...]
-# Author: Rohan Alexander [...UPDATE THIS...]
-# Date: 11 February 2023 [...UPDATE THIS...]
-# Contact: rohan.alexander@utoronto.ca [...UPDATE THIS...]
+# Purpose: Constructs Bayesian hierarchical models to analyze the impact of 
+# enforcement start times on regional fine trends, validates the models, and 
+# compares alternative specifications.
+# Author: Qisheng Yu
+# Date: 27 November 2024
+# Contact: qisheng.yu@mail.utoronto.ca
 # License: MIT
-# Pre-requisites: [...UPDATE THIS...]
-# Any other information needed? [...UPDATE THIS...]
+# Pre-requisites: 
+# - The `arrow`, `ggplot2`, `tidyverse`, `brms`, `caret`, `Metrics`, and `loo` 
+#   packages must be installed and loaded.
+# - Processed datasets (`analysis_data.parquet` and `analysis_data_long.parquet`) 
+#   must be available in the `02-analysis_data` folder.
+# - Ensure the `red-camera-charge` R project structure is being used for consistent 
+#   paths and saving models or outputs.
 
 
 #### Workspace setup ####
@@ -14,8 +21,6 @@
 library(arrow)
 library(ggplot2)
 library(tidyverse)
-library(lme4)
-library(Matrix)
 library(brms)
 library(caret)
 library(Metrics)
@@ -83,13 +88,14 @@ test_data <- data_long[-train_indices, ]
 
 # Bayesian hierarchical model
 bayesian_model <- brm(
-  Fines ~ Year + Enforcement + (1 | Ward_Number),
+  Fines ~ Year * Enforcement + (1 | Ward_Number),
   data = train_data,
   family = gaussian(),
   prior = c(
     prior(normal(1000, 500), class = "Intercept"),
     prior(normal(0, 10), class = "b", coef = "Year"),
     prior(normal(0, 50), class = "b", coef = "Enforcement"),
+    prior(normal(0, 10), class = "b", coef = "Year:Enforcement"),
     prior(student_t(3, 0, 100), class = "sd"),
     prior(student_t(3, 0, 100), class = "sigma")),
   iter = 4000, warmup = 2000, chains = 4, cores = 4,
@@ -122,18 +128,19 @@ pp_check(bayesian_model)
 
 # Model without interaction
 alternative_model <-brm(
-  Fines ~ Year * Enforcement + (1 | Ward_Number),
+  Fines ~ Year + Enforcement + (1 | Ward_Number),
   data = train_data,
   family = gaussian(),
   prior = c(
     prior(normal(1000, 500), class = "Intercept"),
     prior(normal(0, 10), class = "b", coef = "Year"),
-    prior(normal(0, 50), class = "b", coef = "Enforcement"),
-    prior(normal(0, 10), class = "b", coef = "Year:Enforcement"), 
+    prior(normal(0, 50), class = "b", coef = "Enforcement"), 
     prior(student_t(3, 0, 100), class = "sd"),
     prior(student_t(3, 0, 100), class = "sigma")),
   iter = 4000, warmup = 2000, chains = 4, cores = 4,
   seed = 304)
+
+summary(alternative_model)
 
 loo(bayesian_model, alternative_model)
 
@@ -141,12 +148,13 @@ loo(bayesian_model, alternative_model)
 #### Posterior ####
 
 posterior <- brm(
-  Fines ~ Year + Enforcement + (1 | Ward_Number), 
+  Fines ~ Year * Enforcement + (1 | Ward_Number), 
   data = train_data,                          
   prior = c(                                  
     prior(normal(1000, 500), class = "Intercept"),         
     prior(normal(0, 10), class = "b", coef = "Year"),         
     prior(normal(0, 50), class = "b", coef = "Enforcement"), 
+    prior(normal(0, 10), class = "b", coef = "Year:Enforcement"),
     prior(student_t(3, 0, 100), class = "sd"),             
     prior(student_t(3, 0, 100), class = "sigma")),
   iter = 4000, warmup = 2000, chains = 4, cores = 4,
