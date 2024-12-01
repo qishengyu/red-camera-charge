@@ -1,11 +1,11 @@
 ---
-title: "Evaluating the Impact of Enforcement Start Time on Regional Fine Trends: A Bayesian Hierarchical Approach"
-subtitle: "Evidence of a Positive Interaction Between Yearly Trends and Enforcement Policies"
+title: "How Enforcement Start Times Shape Regional Fine Trends: Insights from a Bayesian Hierarchical Analysis"
+subtitle: "Earlier Enforcement Start Dates Drive Stronger Increases in Fines Over Time"
 author: "Qisheng Yu"
 thanks: "Code and data are available at: [https://github.com/qishengyu/red-camera-charge](https://github.com/qishengyu/red-camera-charge)."
 date: today
 date-format: long
-abstract: "This study explores how the timing of enforcement affects regional trends in fines, utilizing a Bayesian hierarchical model on red-light camera data from various areas. The findings indicate that enforcement policies have a significant interaction with annual trends, leading to a notable increase in fines over time, especially in regions where enforcement begins earlier. Model diagnostics and out-of-sample validation support the reliability of these results. These insights highlight the critical role of enforcement timing in influencing compliance behavior and regional differences in fine trends. Policymakers can use this information to develop more effective enforcement strategies aimed at enhancing traffic safety and compliance."
+abstract: "This study examines how the timing of enforcement influences regional fine trends, using a Bayesian hierarchical mixed-effect model to analyze red-light camera data from multiple regions. The findings reveal that regions with earlier enforcement start dates experience greater increases in fines over time, highlighting a significant interaction between enforcement policies and yearly trends. Rigorous model diagnostics and out-of-sample validation confirm the reliability of these results. These insights emphasize the critical role of enforcement timing in shaping compliance behaviors and regional differences, offering valuable guidance for policymakers to design more effective strategies for improving traffic safety and regulatory compliance."
 format: pdf
 number-sections: true
 bibliography: references.bib
@@ -13,15 +13,15 @@ bibliography: references.bib
 
 # Introduction {#sec-introduction}
 
-Running red lights and related traffic violations expose people to massive risks on the road and result in numerous accidents and fatalities every year. Red-light cameras have served as a productive enforcement option against offending drivers and to ensure compliance. While general effectiveness was studied in much detail, subtleties of enforcement start times and their impacts on compliance patterns remain seemingly uncharted. This paper seeks to address this gap by studying how enforcement start time influences regional variations in fines and long-term compliance patterns.
+Running red lights and related traffic violations pose significant risks, contributing to numerous accidents and fatalities annually. Red-light cameras have proven to be an effective enforcement tool, deterring violations and promoting compliance. Studies have extensively examined the general effectiveness of red-light cameras in reducing violations and improving road safety. For instance, Yang et al. (2019) applied propensity score methods to evaluate enforcement impacts on compliance behaviors, demonstrating that red-light cameras reduce violations significantly over time [@yang2019propensity]. Similarly, research by Zhang and Li (2022) examined the interplay between socioeconomic factors and governance policies in shaping urban traffic congestion on a global scale [@zhang2022traffic]. Their study highlights the significant role governance policies play in alleviating congestion, often outweighing the impact of socioeconomic factors. By using a residual trend model, they demonstrated how changes in governance approaches drive variations in congestion patterns over time. While their work provides valuable insights into the macro-level drivers of traffic congestion, it does not address enforcement-specific policies or their direct effects on compliance and fine trends, leaving a critical gap that this study seeks to fill.
 
-This paper focuses on a fines dataset collected from red-light cameras in various regions over several years [@dataset]. Employing a Bayesian hierarchical modeling approach, it chooses to present two works: (1) whether or not enforcement start time affects the trend and pattern of fines and (2) whether or not very sizable regional differences tend to influence fine trends. Our analysis integrates interaction terms used to account for this dynamic interplay between the two explanatory variables and yearly trends based on region random effects.
+Existing studies primarily focus on aggregate measures, such as total reductions in violations or accident rates, often neglecting temporal dynamics and regional heterogeneity in enforcement impacts. For instance, Filtness et al. (2022) conducted a comprehensive review of road safety interventions, including red-light cameras, emphasizing their overall effectiveness in reducing crash rates and improving compliance [@filtness2022review]. However, the study does not explore how the timing of enforcement implementation or regional disparities influence the long-term trends in compliance and fine patterns. This gap highlights the need for more localized and temporally sensitive analyses, which our study seeks to address. Additionally, most prior work relies on static models, which fail to capture the evolving relationship between enforcement and compliance over time. These limitations highlight a critical gap in understanding the temporal and regional factors that influence enforcement outcomes.
 
-This study's estimand is an average change in fines attributed to enforcement timing and yearly trends to account for regional variation. This quantity captures the combined effect of enforcement policy and temporal change on compliance behavior and provides actionable information regarding the effectiveness of these measures.
+This study seeks to fill this gap by investigating how the timing of enforcement affects regional fine trends and long-term compliance behaviors. Using a Bayesian hierarchical mixed-effect modeling approach, we analyze fines data collected from red-light cameras across multiple regions over several years. This approach allows us to account for ward-level variability through random effects while incorporating interaction terms to examine the interplay between enforcement timing and yearly trends. Unlike previous studies, which often assume uniform effects across regions and time, our analysis emphasizes the dynamic and localized nature of enforcement impacts. In particular, our research analyzes a dataset of fines issued by red-light cameras across various regions over several years [@dataset]. Using a Bayesian hierarchical mixed-effect modeling approach, the study investigates two key questions: (1) How does enforcement start time affect the trend and pattern of fines? (2) To what extent do regional differences shape fine trends? The model incorporates interaction terms to capture the dynamic interplay between enforcement timing, yearly trends, and regional variability, with random effects accounting for ward-level heterogeneity.
 
-There is an indication of a significant interaction between enforcement timing and yearly trends, with the implications being that earlier enforcement start dates for regions witness an enhancement in the rate of increases in fines. Enforcement policies are thus critical in shaping compliance behaviors, and there exists strong evidence of a regional effect. We have tested the robustness of our results with respect to stringent model diagnostics and out-of-sample performance.
+The **estimand** of this study is the average change in fines attributable to enforcement timing and annual trends, adjusted for regional variation. This metric provides actionable insights into how enforcement policies shape compliance behaviors over time and across different contexts. The findings reveal that earlier enforcement start times lead to more substantial increases in fines over time, highlighting the importance of timing in enforcement policy design. Furthermore, the results underscore the significant influence of regional factors on compliance patterns, offering a nuanced perspective on enforcement effectiveness that is absent in previous studies.
 
-The study builds on the knowledge on traffic safety and enforcement by highlighting the interplay of policy timing on compliance. These insights can help policymakers in installing their enforcement in the timing most conducive to the attainment of the foreign-Revelation of road safety. The paper consists with @sec-data, which discusses data, @sec-model, which demonstrates methodology, @sec-results, which presents results, @sec-discussion, a broad discussion of findings, and a conclusion along with some ramifications and future directions.
+Our study contributes to the growing literature on traffic safety and enforcement. It provides policymakers with evidence-based insights to optimize the timing and design of enforcement measures, enhancing their impact on road safety and compliance. The structure of this paper is as follows: Section @sec-data outlines the data and preprocessing steps; Section @sec-model presents the methodology; Section @sec-results details the results; Section @sec-discussion provides an in-depth discussion of the findings; and the conclusion explores broader implications and potential directions for future research.
 
 # Data {#sec-data}
 
@@ -67,8 +67,8 @@ The dataset consists of multiple variables, each offering unique insights into t
 #| echo: false
 #| warning: false
 #| message: false
-#| fig-cap: Key Variables in the Red Camera Charges Data
-#| label: fig-variables
+#| fig-cap: Table 1 Key Variables in the Red Camera Charges Data
+#| label: tbl-variables
 
 library(knitr)
 library(kableExtra)
@@ -107,11 +107,25 @@ kable(variable_table, format = "markdown",
 
 Among the variables above, an additional variable, `Enforcement`, was constructed to indicate whether enforcement was active in a given year, based on the recorded `Enforcement_Start_Date`. To facilitate temporal analysis, the dataset was transformed into a long format, where each observation represents a specific ward-year combination, along with its associated fines and enforcement status. The detailed data cleaning is provided in [Appendix @sec-data-cleaning].
 
-While this dataset is highly detailed and specific to Toronto, similar datasets from other jurisdictions, such as provincial-level traffic data or other Vision Zero datasets, were not used due to their lack of granularity and enforcement-specific details. The selected dataset provides a focused lens on red-light enforcement in Toronto, making it uniquely suited to address the research questions posed in this analysis. High-level data cleaning involved removing duplicate rows, standardizing date formats, and ensuring that all relevant variables were complete and free of inconsistencies. The final dataset is well-structured and comprehensive, enabling a robust analysis of red-light camera enforcement trends and their implications for traffic safety in Toronto.
+## Alternative datasets
+
+While this dataset provides detailed and specific insights into red-light camera enforcement in Toronto, alternative datasets were considered but ultimately deemed less suitable for addressing the research questions of this study. Similar datasets, such as provincial-level traffic data or Vision Zero datasets from other jurisdictions, were excluded due to their lack of granularity and enforcement-specific details.
+
+For example, provincial-level traffic datasets [@orsar] often aggregate data across larger geographic areas, making it impossible to isolate the effects of specific enforcement locations or to analyze ward-level variations in fines. Additionally, these datasets typically focus on broader traffic metrics such as collision rates or overall violation counts, rather than detailed year-by-year fine trends linked to specific enforcement start dates. While valuable for understanding macro-level trends, such datasets are not equipped to capture the localized effects of enforcement timing that are central to this analysis. Similarly, Vision Zero datasets from other cities, such as New York City [@nyc_vision_zero] or Chicago [@chicago_vision_zero], offer insights into traffic safety initiatives but often lack the enforcement-specific details present in the Toronto dataset. For instance, these datasets may include the number of violations or accidents but do not provide enforcement start dates or year-by-year fine distributions, which are critical for modeling the interaction between enforcement timing and yearly trends. Furthermore, variations in policy frameworks and enforcement strategies between jurisdictions would make direct comparisons challenging, limiting the ability to draw actionable insights.
+
+The selected Toronto dataset provides several key advantages. It offers granular data at the ward level, including enforcement start dates, detailed yearly fine trends, and precise location identifiers. This level of detail allows for the construction of a Bayesian hierarchical mixed-effect model that accounts for both temporal and regional variations, enabling robust analysis of the interaction between enforcement timing and compliance behaviors. Moreover, the dataset's focus on a single jurisdiction ensures consistency in policy context and enforcement strategies, avoiding potential confounding effects from cross-jurisdictional comparisons.
+
+In terms of data quality, the Toronto dataset underwent rigorous cleaning, including the removal of duplicate rows, standardization of date formats, and verification of variable completeness. The final dataset is well-structured, free from inconsistencies, and uniquely suited to addressing the specific research questions of this study. By providing a detailed view of red-light camera enforcement trends and their implications for traffic safety, this dataset supports a robust and focused analysis that would not be achievable with more generalized or aggregated datasets.
 
 ## Measurement
 
-The dataset captures traffic violations recorded by Toronto’s red-light cameras, which are automated systems designed to improve road safety by monitoring intersections and detecting vehicles running red lights. When a violation occurs, the camera records an image and video of the vehicle, identifies the license plate, and issues a fine to the vehicle owner. These violations are aggregated annually for each camera location and recorded in the dataset as yearly fine counts (`Year_2007` to `Year_2024`). We introduced the `Enforcement` variable, a binary indicator of whether enforcement was active in a given year, based on the `Enforcement_Start_Date`. To facilitate temporal analysis and simplify subsequent modeling, the dataset was transformed into a long format, where each row represents a combination of a `Ward_Number`, `Year`, and its corresponding fines and enforcement status.
+The dataset represents a structured collection of traffic violations captured by Toronto’s red-light camera system, which operates as an automated enforcement mechanism. In the real world, when a vehicle runs a red light at an intersection, sensors embedded in the road trigger the camera system. This system records detailed information about the event, including an image of the vehicle, the state of the traffic light, the time and date of the violation, and the vehicle’s license plate number. These details are then processed by enforcement authorities to confirm the violation. Once verified, a fine is issued to the vehicle owner, reflecting a tangible enforcement response to a specific infraction.
+
+Each individual violation generates a fine, but these fines are aggregated annually for reporting and analysis. In the dataset, these aggregations are represented as yearly fine counts for each camera location, spanning the years 2007 to 2024. Each entry in the dataset encapsulates the total number of fines issued at a specific location in a given year, capturing both the frequency of violations and the effectiveness of enforcement.
+
+To expand the dataset’s utility and facilitate analysis, we derived an additional variable: `Enforcement`, a binary indicator reflecting whether enforcement was active during a given year. This variable was created by comparing each camera location's recorded `Enforcement_Start_Date` with the relevant year. If enforcement had already started or was active during that year, the indicator was coded as 1; otherwise, it was coded as 0.
+
+To enable temporal analysis and simplify the modeling process, the dataset was transformed from a wide format, where each year was represented as a separate column, into a long format. In this structure, each row corresponds to a specific combination of `Ward_Number`, `Year`, fines, and enforcement status. This transformation mirrors the progression of real-world enforcement data collection, allowing each entry to directly link a location and time period to the associated compliance data.
 
 ## Outcome variables
 
@@ -119,8 +133,8 @@ The dataset captures traffic violations recorded by Toronto’s red-light camera
 #| echo: false
 #| warning: false
 #| message: false
-#| fig-cap: Numerical Summary of Outcome Variables Fines
-#| label: fig-outcomestatistics
+#| fig-cap: Table 2 Numerical Summary of Outcome Variables Fines
+#| label: tbl-outcomestatistics
 
 library(dplyr)
 library(knitr)
@@ -273,7 +287,7 @@ Define $Y_{ij}$ as the total number of fines issued in year j for region i. We a
 
 $$Y_{ij}\sim N(\mu_{ij}, \sigma^2)$$
 
-$$\mu_{ij}=\beta_0+\beta_1\cdot \text{Year}_{ij}+\beta_2\cdot\text{Enforcement}_{ij}+\beta_3\cdot (\text{Year}_{ij}\cdot \text{Enforcement}_{ij} )+u_{i}+\epsilon_{ij}$$
+$$Y_{ij}=\beta_0+\beta_1\cdot \text{Year}_{ij}+\beta_2\cdot\text{Enforcement}_{ij}+\beta_3\cdot (\text{Year}_{ij}\cdot \text{Enforcement}_{ij} )+u_{i}+\epsilon_{ij}$$
 
 Where:
 
@@ -293,7 +307,7 @@ We implement the model using R [@R-base] and the `brms` [@brms] package. The pri
 
 ### Model justification
 
-The proposed Bayesian hierarchical model captures both temporal and enforcement effects on the fines. Specifically:
+The proposed Bayesian hierarchical mixed-effect model captures both temporal and enforcement effects on the fines. Specifically:
 
 **Fixed Effects:**
 
@@ -308,6 +322,22 @@ The proposed Bayesian hierarchical model captures both temporal and enforcement 
 Priors were chosen to be weakly informative, reflecting reasonable assumptions while letting the data dominate parameter estimation. For example, $\beta_0 \sim N(1000, 500)$ reflects typical fine levels based on exploratory analysis. The hierarchical structure ensures that data from all wards inform the estimation of overall trends while allowing for ward-specific deviations.
 
 This model is well-suited to address the two research questions: (1) identifying temporal trends and (2) understanding the role of enforcement in influencing fines. The Bayesian framework also provides credible intervals, enabling a robust assessment of uncertainty.
+
+### Model Decisions: Features
+
+The modeling decisions made in this study closely align with the characteristics of the dataset and the research objectives. Specifically:
+
+-   **Inclusion of Year as a Continuous Variable**: The dataset provides annual fine counts from 2007 to 2024. By treating Year as a continuous variable rather than categorizing it, the model captures the overall temporal trends in fines and avoids loss of information that could arise from arbitrary grouping.
+
+-   **Incorporation of Enforcement Status**: The `Enforcement` variable, derived from the dataset’s `Enforcement_Start_Date`, is included to evaluate the impact of enforcement timing on fines. This binary indicator allows the model to distinguish periods before and after enforcement activation, reflecting a key explanatory factor tied to the dataset's structure.
+
+-   **Interaction Terms for Dynamic Analysis**: The interaction term between `Year` and `Enforcement` accounts for the possibility that the effect of enforcement evolves over time. This decision was informed by the observation that fine trends vary substantially across different time periods and enforcement scenarios in the dataset.
+
+-   **Inclusion of Ward-Level Random Effects**: The dataset captures data from 25 wards, with notable differences in fine trends across regions. Including ward-level random effects allows the model to account for unobserved heterogeneity across regions, which is critical given the regional disparities highlighted in the dataset.
+
+-   **Long Format Transformation and Its Role**: The decision to model fines in a long format, where each row represents a unique combination of `Ward_Number`, `Year`, and corresponding fines and enforcement status, aligns with the need for hierarchical modeling. This structure enables the explicit linkage of temporal, regional, and enforcement effects.
+
+By grounding these modeling choices in the dataset's structure and key features, the approach ensures that the model effectively captures the relationships of interest while addressing the nuances of the data. These decisions also support the research aim of exploring temporal dynamics and regional heterogeneity in fine trends and enforcement impacts.
 
 ### Assumptions and Limitations
 
@@ -327,14 +357,14 @@ The final model was chosen based on the improved explanatory power and theoretic
 
 # Results {#sec-results}
 
-Our results are summarized in @fig-model1.
+Our results are summarized in @tbl-model1.
 
 ```{r}
 #| echo: false
 #| warning: false
 #| message: false
-#| fig-cap: Summary of the Bayesian model
-#| label: fig-model1
+#| fig-cap: Table 3 Summary of the Bayesian model
+#| label: tbl-model1
 
 # Create a data frame for the Bayesian model summary
 bayesian_summary <- data.frame(
@@ -357,7 +387,7 @@ kable(bayesian_summary, format = "markdown",
 
 ```
 
-@fig-model1 provides a summary of the Bayesian model's estimates and diagnostic metrics. The regression coefficients include:
+@tbl-model1 provides a summary of the Bayesian model's estimates and diagnostic metrics. The regression coefficients include:
 
 -   **Intercept**: The baseline level of fines before considering the effects of year and enforcement. The wide confidence intervals (CI: -3583.08 to 5255.50) indicate considerable uncertainty around the baseline value.
 
@@ -373,14 +403,14 @@ All convergence metrics and effective sample sizes (Bulk and Tail ESS) suggest t
 
 ## Alternative Model
 
-We also consider an alternative model without interaction term. Our results are summarized in @fig-model2.
+We also consider an alternative model without interaction term. Our results are summarized in @tbl-model2.
 
 ```{r}
 #| echo: false
 #| warning: false
 #| message: false
-#| fig-cap: Summary of the alternative model excluding the interaction term between Year and Enforcement
-#| label: fig-model2
+#| fig-cap: Table 4 Summary of the alternative model excluding the interaction term between Year and Enforcement
+#| label: tbl-model2
 
 # Create data frame for the alternative model summary
 alternative_model_table <- data.frame(
@@ -403,7 +433,7 @@ kable(alternative_model_table, format = "markdown", align = "c",
 
 ```
 
-The alternative model provides an estimation of the fixed effects of `Year` and `Enforcement` on fines without the inclusion of an interaction term. The key results are summarized in the @fig-model2:
+The alternative model provides an estimation of the fixed effects of `Year` and `Enforcement` on fines without the inclusion of an interaction term. The key results are summarized in the @tbl-model2:
 
 -   **Intercept**: The baseline estimate of fines is -1802.61, which is not meaningful in the current context as the confidence interval includes a wide range (-6063.95 to 2607.64), indicating high uncertainty in this parameter.
 
@@ -425,8 +455,8 @@ To compare the Bayesian models, we performed Leave-One-Out Cross-Validation, a r
 #| echo: false
 #| warning: false
 #| message: false
-#| fig-cap: Summary of LOO model comparison
-#| label: fig-loo
+#| fig-cap: Table 5 Summary of LOO model comparison
+#| label: tbl-loo
 
 # Create a data frame for LOO model comparison
 loo_comparison_table <- data.frame(
@@ -515,41 +545,43 @@ In the results section, we used brms [@brms], caret [@caret], Metrics [@Metrics]
 
 ## Key Findings and Their Implications {#sec-key-findings-and-their-implications}
 
-Our investigation has revealed that the timing of enforcement initiation significantly influences fine trends across regions. The interaction term between year and enforcement offered evidence of the influence of enforcement measure on the annual fines trajectory, with this influence slightly growing with passing time. This implies that enforcement policies alter driver behavior in the short term but may also have some long-lasting enforcement effects. Moreover, the visible variance into which random effects have been decomposed along with wards substantiates the critical importance of contextual factors (such as traffic situations or socioeconomic characteristics) in shaping fine trends. These results further corroborate the perspective that regional context matters in designing and implementing enforcement policies.
+Our analysis demonstrates that the timing of enforcement initiation plays a pivotal role in shaping fine trends across regions. The interaction between year and enforcement provides compelling evidence of how enforcement measures influence the trajectory of annual fines, with this impact gradually intensifying over time. This finding suggests that enforcement policies not only prompt immediate changes in driver behavior but may also exert enduring effects over the long term. Furthermore, the decomposition of random effects by wards highlights the significant influence of contextual factors, such as traffic conditions and socioeconomic characteristics, on fine trends. These results reinforce the importance of considering regional contexts when designing and implementing effective enforcement policies.
+
+The decomposition of random effects by wards further emphasizes the influence of contextual factors, such as traffic conditions, socioeconomic characteristics, or infrastructural differences, in shaping fine trends. This finding is consistent with global research on urban traffic management, which underscores the interplay between governance policies and regional dynamics in influencing compliance patterns [@zhang2022traffic]. These results reinforce the importance of tailoring enforcement strategies to local circumstances, rejecting one-size-fits-all solutions.
 
 ## Interpretation of the Bayesian Model Results
 
-The Bayesian hierarchical model that we used provided a solid framework for validating enforcement policies through experimentation-differentiating fixed and random effects; the posterior results point out that while the overall baseline (the intercept) and year trends were largely devoid of statistical significance, the year-enforcement interaction was both significant and positive, albeit small. The interaction suggests that the enforcement measures may gain in strength over time as compliance increases or violations decrease.
+The Bayesian hierarchical mixed-effects model employed in this study provided a robust framework for evaluating enforcement policies by distinguishing between fixed and random effects. The posterior analysis revealed that while the overall baseline (intercept) and year trends lacked statistical significance, the interaction between year and enforcement was both statistically significant and positively associated with fines, albeit with a modest effect size. This interaction suggests that enforcement measures may strengthen over time, either by increasing compliance or reducing violations.
 
-Interestingly, the alternative, simpler model, without the interaction term, yielded similar conclusions but slightly worse scores in the model comparison metrics for the leave-one-out cross-validation. This underscores the importance of considering interactions when modeling policy impacts because they will demonstrate trends that can easily be overlooked by simpler models. Importantly, Rhat values and effective sample sizes validated the model diagnostics that the models had properly converged, and the estimations of parameters were deemed trustworthy.
+Notably, the alternative, simpler model—excluding the interaction term—produced comparable conclusions but demonstrated slightly inferior performance in leave-one-out cross-validation metrics. This underscores the necessity of accounting for interactions to uncover trends that might otherwise remain hidden, as discussed in studies on automated enforcement policies [@yang2019propensity]. This finding highlights the critical role of accounting for interactions in policy impact modeling, as they can reveal nuanced trends that might otherwise be overlooked in simpler frameworks. Furthermore, the Rhat values and effective sample sizes confirmed the convergence of the models, ensuring the reliability and robustness of parameter estimates.
 
 ## Limitations and Future Directions
 
-Despite our approach's strengths, certain limitations are worth mentioning. First, the sharp peak shown in the observed distribution of fines, which our posterior predictive checks struggled to replicate, alludes to possible model misspecification. Future models can enhance the explanation of variance in fines by incorporating additional covariates, such as traffic volumes, population density, or socioeconomic factors.
+Despite the strengths of our approach, several limitations warrant consideration. First, the sharp peak observed in the fines distribution, which our posterior predictive checks struggled to replicate, suggests potential model misspecification. Future iterations could address this by incorporating additional covariates, such as traffic volume, population density, or socioeconomic indicators, to better account for variance in fines. For instance, literature on traffic congestion highlights the critical role of socioeconomic and governance variables in shaping compliance behaviors [@zhang2022traffic].
 
-Second, in our analysis, we consider only fines as measures of outcomes, which do not give the bigger picture about enforcement effectiveness. Wider outcomes like reductions in accidents, improving compliance rates, or changes in public perception are not captured in our dataset. The inclusion of these other metrics in future research would lend a broader picture for measuring the social impact of enforcement policies.
+Second, our analysis focuses solely on fines as an outcome measure, which provides only a narrow perspective on enforcement effectiveness. Broader metrics, such as reductions in accidents, improvements in compliance rates, or shifts in public perception, remain unexamined. Including these dimensions in future research would provide a more comprehensive evaluation of the social and behavioral impacts of enforcement policies.
 
-Third, while the dataset covers a long period of time, it is limited to just one region. An extension of the analysis in several regions or jurisdictions might allow the generalizability of the results and further insights about interactions between regional policies, characteristics, and enforcement measures.
+Lastly, while the dataset spans a considerable timeframe, it is geographically confined to a single region. Expanding the analysis to multiple regions or jurisdictions could enhance the generalizability of the findings and offer deeper insights into how regional characteristics and enforcement strategies interact to shape outcomes.
 
 ## Policy Implications and Broader Context
 
-Our study results provide strong insights for policymakers. A significant year-enforcement interaction emphasizes the importance of persistent enforcement efforts, since the impact on fines tends to grow over time. So, a longitudinal approach toward the final success of enforcement policies will benefit the policymakers. Further, the large random-effect estimates specific to ward intercepts indicate that enforcement policies need tailoring for local circumstances. A one-size-fits-all approach is inadequate for addressing such diverse reasons behind violations across regions.
+Our findings offer valuable guidance for policymakers. The significant year-enforcement interaction highlights the importance of sustained enforcement efforts, as their impact on fines appears to strengthen over time. This underscores the need for a long-term, strategic approach to ensure the enduring success of enforcement policies. Additionally, the substantial random-effect estimates associated with ward-specific intercepts reveal the necessity of tailoring enforcement measures to local contexts. A one-size-fits-all approach is insufficient to address the diverse factors driving violations across regions.
 
-Moreover, the results emphasize how keeping accurate and fine-grained data serves as an invaluable asset for any evaluation of enforcement. The Bayesian hierarchical modeling demonstrates how incorporating random effects gives an improved detailed insight into such localized trends which will enable policymakers to create better-targeted and impactful interventions.
+Furthermore, the study underscores the critical role of accurate, granular data in evaluating the effectiveness of enforcement policies. The application of Bayesian hierarchical mixed-effects modeling demonstrates the value of incorporating random effects to capture localized trends. This approach enables policymakers to design more targeted and impactful interventions, offering a nuanced understanding of how enforcement policies can be optimized to address regional variations effectively.
 
 ## Methodological Insights and Reflection
 
-This study discusses the importance of benefits that Bayesian methods bring forth in the policy research area. The flexibility of Bayesian hierarchical models allowed for incorporating regional heterogeneity and exploring complex interactions between year and enforcement. In addition, using informative priors helped to stabilize the model, which contributed to better parameter estimations, especially in the light of the variability in fines over the years and wards.
+This study highlights the significant advantages that Bayesian methods bring to policy research. The flexibility of Bayesian hierarchical mixed-effects models enabled us to account for regional heterogeneity and to investigate complex interactions, such as those between year and enforcement. Moreover, the use of informative priors proved instrumental in stabilizing the model, leading to more reliable parameter estimates, particularly in the context of the considerable variability in fines observed across years and regions. These methodological insights align with best practices in observational data analysis, as outlined in studies on automated enforcement [@yang2019propensity].
 
-The complete posterior predictive checks reveal that the predicted distributions of the model diverge from the observed data for some extreme values of fines. This is a gentle reminder on the importance of model diagnostics and perhaps hinting to the idea that alternative models, e.g., non-Gaussian distributions, may fit the data better.
+However, the posterior predictive checks revealed some divergence between the model’s predicted distributions and the observed data, particularly at the extreme ends of the fine values. This underscores the critical importance of thorough model diagnostics and suggests that alternative modeling approaches, such as those incorporating non-Gaussian distributions, could better capture the nuances of the data. These findings serve as a reminder of the iterative nature of model refinement and the need to explore flexible approaches to improve model fit and predictive accuracy.
 
 ## Weaknesses and next steps
 
-Enforcement is represented by fines as a singular and imperfect metric in our analysis. Fines offer a tangible outcome, but there is no reflection of societal consequences or behavioral implications of enforcement. Future research could remedy this limitation by expanding the data sources employed, perhaps including accident reports, compliance rates, public opinion surveys, etc., for a more holistic evaluation of enforcement policies.
+In this study, enforcement is represented solely by fines—a tangible yet inherently limited metric. While fines provide a measurable outcome, they fail to capture the broader societal impacts or behavioral shifts resulting from enforcement policies. Future research could address this limitation by incorporating diverse data sources, such as accident reports, compliance rates, and public opinion surveys, offering a more comprehensive evaluation of enforcement effectiveness and its societal implications.
 
-The other limitation is the great imposition of simplicity in our models. Although inclusion of interaction terms and random effects introduced further complexity, there are certainly richer modeling techniques available which may have such characteristics put to use to include additional dependencies, such as spatial models or time-varying coefficients. Future studies would certainly raise to the challenge of exploring some of these approaches which would help to deepen the understanding of the dynamic relationships in play.
+Another limitation lies in the relative simplicity of our modeling approach. Although the inclusion of interaction terms and random effects added depth to the analysis, more advanced modeling techniques, such as spatial models or time-varying coefficients, could better account for complex dependencies and dynamic relationships. Future studies should embrace these richer approaches to uncover deeper insights into the multifaceted interactions shaping enforcement outcomes.
 
-In conclusion, to make the results of their study generalizable, future studies should include more regions, different enforcement policies, or longer time-span datasets. Examining how enforcement policies offset other broader trends, such as technology development in traffic surveillance, will yield information while crafting policy for the future.
+Lastly, to enhance the generalizability of findings, future research should consider expanding the scope to include multiple regions, varied enforcement policies, and datasets spanning longer time periods. Additionally, exploring how enforcement measures intersect with broader trends, such as advancements in traffic surveillance technology, could provide valuable insights for shaping future policy directions.
 
 \newpage
 
@@ -567,13 +599,107 @@ The dataset was transformed from wide format into a long format to facilitate te
 
 ## Surveys, Sampling, and Observational Data
 
-The present study derives from observational data obtained from multiple regions across the United States by using red-light camera sites. The dataset offered insight into real enforcement practices and how those practices affected the issuance of fines over time. Unlike experimental data, observational data does not involve random assignment, which creates complications related to confounding and causal inference. The data provides the base of all red-light camera sites and the subsequent fines issued for the period spanning from 2007 until 2024. Since this represents a near population-level census of all locations under monitoring, sampling bias is low. However, selection bias might be created by varying definitions across regions for the date of enforcement's initiation, as most of such dates tended to be set left to locations displaying high traffic or accident rates.
+### Strengths and Limitations of the Dataset
 
-There are external variables that change the distribution of fines, such as population changes, changes in traffic laws, or changes in the economy. Those variables are not explicitly included into such models and may confound the relation between enforcement and fines issuance. One additional point to note is that the enforcement start times were not random. Potentially, this could introduce systematic biases. For example, violations may have been higher in regions targeted sooner for enforcement, which in turn created a skewed view of the results.
+The dataset used in this study stems from observational data collected from red-light camera sites across multiple regions in the United States. Its key strength lies in its near-comprehensive coverage of monitored locations and associated fines issued from 2007 to 2024. This makes it a valuable resource for understanding real-world enforcement practices and their temporal trends. Additionally, the population-level census nature of the dataset reduces sampling bias, as it includes all sites under monitoring during the study period.
 
-To illustrate some potential biases, we ran a simulated rather simple observational dataset. This simulation assumed that enforcement would generally be more likely put in place sooner in regions that initially had higher fines. Results indicated that not incorporating such biases into the model may lead to an exaggerated upper limit of enforcement's effect on fines.
+However, as is common with observational data, the dataset is subject to several limitations. Notably:
 
-The challenges of using observational data have been widely discussed in traffic enforcement literature. Studies often highlight the need for robust statistical methods, such as hierarchical modeling or propensity score matching, to address confounding and selection bias [@yang2019propensity]. By using a Bayesian hierarchical model, we attempted to control for regional-level variations and capture the temporal trends in fines, aligning with best practices in observational data analysis.
+-   **Confounding Factors**: External variables such as population changes, economic shifts, or modifications to traffic laws are not explicitly accounted for in the dataset. These variables may distort the relationship between enforcement start times and fine issuance.
+
+<!-- -->
+
+-   **Selection Bias**: Enforcement initiation was likely not random. High-violation regions may have been prioritized for enforcement, potentially skewing the observed effects of enforcement policies.
+
+-   **Measurement Inconsistencies**: Differences in regional definitions of enforcement start dates and data collection practices could introduce variability that complicates direct comparisons.
+
+To illustrate these limitations, a simulated dataset was created, assuming that enforcement tended to be introduced earlier in regions with initially higher fines. The simulation showed that failing to account for this systematic bias could result in overestimating enforcement's effect on fines. This highlights the need for robust statistical techniques, such as propensity score matching or hierarchical modeling, to address confounding and selection biases effectively.
+
+### Ideal Data Collection and Sampling
+
+#### Ideal Sampling Strategy
+
+To achieve a more comprehensive and unbiased understanding of enforcement policies, an ideal dataset would rely on stratified random sampling. This approach would involve dividing regions into strata based on relevant characteristics, such as population density, average traffic volume, socioeconomic status, and historical violation rates. A representative sample of sites would then be randomly selected from each stratum to ensure balanced and unbiased data.
+
+**Strata Definition:**
+
+-   **Urban vs. Rural**: Traffic patterns and enforcement needs often differ significantly between urban and rural areas.
+
+<!-- -->
+
+-   **High vs. Low Violation Regions**: Grouping regions by historical violation rates ensures that both high- and low-violation areas are represented.
+
+-   **Socioeconomic Factors**: Strata could include regions grouped by income levels or educational attainment to capture disparities in compliance behavior.
+
+-   **Traffic Volume**: Regions with varying average daily traffic counts would be sampled to understand how traffic density influences enforcement effectiveness.
+
+**Sampling within Strata:**
+
+-   Each stratum would be assigned a proportional sample size based on its overall weight in the population.
+
+<!-- -->
+
+-   Random selection within each stratum ensures representative coverage while minimizing sampling bias.
+
+#### Ideal Data Collection Methods
+
+In an ideal scenario, data collection would involve a combination of automated and manual methods to ensure accuracy and comprehensiveness:
+
+**Automated Data Collection**:
+
+-   Red-light camera systems would be equipped with standardized software to record detailed information about each violation, including timestamps, vehicle speeds, and contextual images.
+
+<!-- -->
+
+-   Traffic sensors and GPS systems could monitor traffic volume and flow patterns, providing additional context for violations.
+
+**Supplementary Data Sources**:
+
+-   **Survey-Based Metrics**: Public opinion surveys could assess perceptions of enforcement policies, compliance motivations, and general road safety awareness.
+
+<!-- -->
+
+-   **Crash and Incident Reports**: Integrating data from police reports and insurance claims would provide insights into the broader impact of enforcement policies on road safety.
+
+-   **Socioeconomic Data**: Linking traffic data with census data would enable a deeper understanding of how demographic factors influence compliance and violations.
+
+**Temporal and Spatial Standardization**: Data collection would occur at consistent intervals (e.g., monthly) and across uniformly defined regions to minimize variability and enhance comparability.
+
+#### Ideal Survey Design
+
+A survey could serve as a complementary tool to collect qualitative and quantitative data on enforcement perceptions and impacts. The survey would include:
+
+**Target Population**:
+
+-   Drivers in regions with red-light cameras, stratified by age, gender, and driving experience.
+
+-   Local policymakers and enforcement officers to capture their perspectives on policy effectiveness.
+
+**Survey Distribution**:
+
+-   Surveys could be distributed online (via email or traffic-related websites), at DMV offices, or through in-person interviews at traffic hotspots.
+
+**Survey Content**:
+
+-   **Perceptions of Enforcement**: Questions about the fairness, necessity, and impact of red-light cameras.
+
+-   **Behavioral Changes**: Self-reported changes in driving behavior since enforcement began.
+
+-   **Policy Awareness**: Awareness of enforcement policies and their goals.
+
+-   **Compliance Factors**: Factors influencing compliance, such as fear of fines or awareness of road safety benefits.
+
+#### Data Validation and Bias Mitigation
+
+-   **Cross-Validation with Independent Data**: Compare red-light camera data with independent sources, such as accident records or insurance claims, to validate findings.
+
+<!-- -->
+
+-   **Temporal Matching**: Align data collection periods across regions to control for temporal effects.
+
+-   **Bias Correction**: Use statistical techniques, such as propensity score matching or instrumental variable analysis, to address confounding and selection biases.
+
+In conclusion, while the current dataset provides valuable insights into enforcement impacts, its limitations highlight the need for more robust and comprehensive data collection methods. An ideal dataset would incorporate stratified random sampling, diverse data sources, and standardized collection practices, enabling a more nuanced understanding of enforcement policies and their broader implications. By addressing these gaps, future research could provide stronger evidence to inform policy decisions and improve traffic safety outcomes.
 
 ## Model details {#sec-model-details}
 
@@ -607,7 +733,7 @@ ggplot(prior_samples_long, aes(x = Value, fill = Parameter)) +
   theme_minimal()
 ```
 
-@fig-prior illustrates the prior distributions for the beta parameters used in the Bayesian hierarchical model, providing a visual representation of the assumed variability and central tendencies before observing the data. Specifically:
+@fig-prior illustrates the prior distributions for the beta parameters used in the Bayesian hierarchical mixed effect model, providing a visual representation of the assumed variability and central tendencies before observing the data. Specifically:
 
 -   **Beta_0 (Intercept)**: The prior assumes a normal distribution centered at 1000 with a relatively large standard deviation of 500, reflecting a high degree of uncertainty about the baseline fines across wards.
 -   **Beta_1 (Year effect)**: The prior is centered at 0 with a standard deviation of 10, indicating an expectation of little or no systematic yearly trend in fines, with some allowance for moderate variation.
