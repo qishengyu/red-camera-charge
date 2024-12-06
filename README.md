@@ -1,4 +1,4 @@
-# Red-Light-Camera-Annual-Charges
+# Red Light Camera Annual Charges
 
 ## Overview
 This repository contains the analysis for a study investigating the impact of enforcement start times on regional fine trends using Bayesian hierarchical modeling. The project leverages red-light camera fine data across multiple years and regions, aiming to answer two key questions:
